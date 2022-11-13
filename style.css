@@ -9,11 +9,14 @@ body {
     justify-content: center;
 }
 
+
+
 .column-left {
     flex: 1;
+    min-width: auto;
 }
 
 .column-right {
     flex: 1;
-    min-width: 800px;
+    min-width: auto;
 }
