@@ -2,6 +2,10 @@
     box-sizing: border-box;
 } 
 
+:root {
+    font-family: monospace;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,12 +15,44 @@ body {
 
 
 
-.column-left {
+.column{
     flex: 1;
     min-width: auto;
 }
 
 .column-right {
-    flex: 1;
-    min-width: auto;
+    margin: 40px 50px;
+}
+
+.header {
+    margin-left: 50px;
+}
+
+.formcontainer, .footer {
+    margin: 50px;
+}
+
+
+
+form {
+    
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 50px;
+
+}
+
+label {
+    display: block;
+}
+
+form > div {
+    border: 1px solid black;
+}
+
+input {
+    width: 200px;
 }
