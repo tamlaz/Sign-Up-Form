@@ -4,6 +4,7 @@
 
 :root {
     font-family: monospace;
+    color: antiquewhite;
 }
 
 body {
@@ -11,6 +12,24 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    background-color: rgb(30, 40, 50);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    border-radius: 12px;
+    background-color: #003249;
+}
+
+.column-left {
+    display: flex;
+    
+}
+
+img {
+    flex: 1;
+    border-radius: 12px;
 }
 
 
@@ -26,6 +45,7 @@ body {
 
 .header {
     margin-left: 50px;
+    margin-top: 80px;
 }
 
 .formcontainer, .footer {
@@ -35,7 +55,6 @@ body {
 
 
 form {
-    
     border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -55,4 +74,12 @@ form > div {
 
 input {
     width: 200px;
+}
+
+button {
+    background-color: #b4a979;
+    width: 180px;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 700;
 }
