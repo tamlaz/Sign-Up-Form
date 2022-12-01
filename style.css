@@ -5,6 +5,12 @@
 :root {
     font-family: monospace;
     color: antiquewhite;
+    font-family: "Quantum";
+}
+
+@font-face {
+    font-family: "Quantum";
+    src: url(Quantum.otf);
 }
 
 body {
@@ -16,31 +22,28 @@ body {
     height: 100vh;
 }
 
-.container {
+.maincontainer {
+    margin: 0px;
+    padding: 0px;
     display: flex;
-    border-radius: 12px;
     background-color: #003249;
 }
 
 .column-left {
-    display: flex;
-    
+    background-image: url("cosmosSmall.jpeg");
+    background-repeat: no-repeat;
+    min-width: 70vh;
+    background-size: cover;
+    height: auto;
 }
-
-img {
-    flex: 1;
-    border-radius: 12px;
-}
-
-
 
 .column{
     flex: 1;
-    min-width: auto;
 }
 
 .column-right {
-    margin: 40px 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -48,14 +51,20 @@ img {
     margin-top: 80px;
 }
 
-.formcontainer, .footer {
-    margin: 50px;
+.form, .footer {
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
 
+.footer {
+    margin-top: 30px;
+}
 
+.container {
+    background-color: #034361;
+}
 
 form {
-    border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -68,12 +77,13 @@ label {
     display: block;
 }
 
-form > div {
-    border: 1px solid black;
-}
-
 input {
     width: 200px;
+    height: 30px;
+}
+
+input:invalid {
+    border: 1px solid red;
 }
 
 button {
