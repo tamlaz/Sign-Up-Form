@@ -82,9 +82,19 @@ input {
     height: 30px;
 }
 
-input:invalid {
+input: {
     border: 1px solid red;
 }
+
+input:valid {
+    border: 1px solid #006532;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+    border: 2px solid #b4a979
+  }
 
 button {
     background-color: #b4a979;
