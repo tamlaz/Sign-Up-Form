@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    border: 1px solid red;
 } 
 
 :root {
@@ -39,23 +38,29 @@ body {
 }
 
 .logoplaceholder {
-    position: relative
+    position: relative;
     display: flex;
-    height: 150px;
+    height: 120px;
     width: 100%;
-    margin-top: 165px;
+    margin-top: 120px;
     top: 5rem;
-    /* opacity: 0.4; */
+    opacity: 0.4;
     background-color: black;
 }
 
-.background {
+.logobar {
     position: absolute;
-    top: 12rem;
+    top: 13rem;
     left: 10rem;
     display: flex;
     height: 100px;
     align-content: center;
+}
+
+.project-name {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
 }
 
 .column{
