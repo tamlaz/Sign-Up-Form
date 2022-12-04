@@ -10,8 +10,13 @@
 <body>
   <div class="maincontainer">
     <div class="column-left">
-        <!-- <img src="./cosmosSmall.jpeg" alt="The eternal cosmos"> -->
-        <div class="logoplaceholder"></div>
+        <div class="logoplaceholder">
+            
+        </div>
+        <div class="background">
+            <img src="./odin-lined.png">
+            <div>Project OdinSpace</div>
+        </div>
         <div class="credit"></div>
     </div>
     <div class="column-right">
@@ -27,15 +32,15 @@
                 <form action="get">
                     <div>
                         <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="fname" required>
+                        <input type="text" name="fname" id="fname">
                     </div>
                     <div>
                         <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="lname" required>
+                        <input type="text" name="lname" id="lname" pattern="[A-Z][a-z]+">
                     </div>
                     <div>
                         <label for="user-email">Email address</label>
-                        <input type="email" name="user-email" id="user-email" required>
+                        <input type="email" name="user-email" id="user-email">
                     </div>
                     <div>
                         <label for="user-tel">Telephone</label>
@@ -43,11 +48,11 @@
                     </div>
                     <div>
                         <label for="user-pw">Password</label>
-                        <input type="password" name="user-pw" id="user-pw" required>
+                        <input type="password" name="user-pw" id="user-pw">
                     </div>
                     <div>
                         <label for="user-pwc">Confirm Password</label>
-                        <input type="password" name="user-pwc" id="user-pwc" required>
+                        <input type="password" name="user-pwc" id="user-pwc">
                     </div>
                 </form>
             </div>
