@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    border: 1px solid red;
 } 
 
 :root {
@@ -35,6 +36,26 @@ body {
     min-width: 70vh;
     background-size: cover;
     height: auto;
+}
+
+.logoplaceholder {
+    position: relative
+    display: flex;
+    height: 150px;
+    width: 100%;
+    margin-top: 165px;
+    top: 5rem;
+    /* opacity: 0.4; */
+    background-color: black;
+}
+
+.background {
+    position: absolute;
+    top: 12rem;
+    left: 10rem;
+    display: flex;
+    height: 100px;
+    align-content: center;
 }
 
 .column{
@@ -82,7 +103,7 @@ input {
     height: 30px;
 }
 
-input: {
+input:invalid {
     border: 1px solid red;
 }
 
