@@ -1,4 +1,3 @@
-alert("The JS is linked");
 let a;
 let b;
 
